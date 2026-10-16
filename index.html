@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Вікторія Фастовець — адвокат</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo">
+        <span class="logo__mark"></span>
+        <span class="logo__text" data-i18n="logo">Вікторія Фастовець</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#about" data-i18n="nav.about">Про мене</a>
+        <a href="#services" data-i18n="nav.services">Послуги</a>
+        <a href="#experience" data-i18n="nav.experience">Досвід</a>
+        <a href="#contact" data-i18n="nav.contact">Контакти</a>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang" role="group" aria-label="Language">
+          <button class="lang__btn is-active" data-lang="uk">UA</button>
+          <button class="lang__btn" data-lang="en">EN</button>
+        </div>
+        <a href="#contact" class="btn btn--dark btn--sm" data-i18n="cta.consult">Консультація</a>
+        <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Юрист · Адвокат · Київ</p>
+          <h1 class="hero__title" data-i18n="hero.title">Надійний захист<br>вашого<br><em>бізнесу</em></h1>
+          <p class="hero__lead" data-i18n="hero.lead">Понад 20 років юридичної практики у сфері господарського, корпоративного, цивільного, податкового та трудового права.</p>
+          <div class="hero__buttons">
+            <a href="#contact" class="btn btn--dark" data-i18n="cta.consult">Консультація</a>
+            <a href="#services" class="btn btn--outline" data-i18n="cta.more">Детальніше</a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="ph ph--tall"><img src="images/portrait.jpg" alt="Вікторія Фастовець, адвокат" style="--pos:50% 30%"></div>
+
+          <div class="card hero__clients">
+            <div>
+              <p class="stat__num stat__num--sm">20+</p>
+              <p class="card__label" data-i18n="hero.clients">Років практики</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HIGHLIGHTS (3 cards) ============ -->
+    <section class="highlights">
+      <div class="container highlights__grid">
+        <article class="hl">
+          <div class="ph ph--wide"><img src="images/stamp.jpg" alt="Адвокатська печатка та підпис на документі" style="--pos:50% 42%" loading="lazy"></div>
+          <p class="eyebrow eyebrow--sm" data-i18n="hl.1.eyebrow">Суди</p>
+          <h3 class="hl__title" data-i18n="hl.1.title">Судовий захист</h3>
+          <p class="muted" data-i18n="hl.1.text">Представництво в цивільних, господарських та адміністративних спорах — від досудового врегулювання до касації.</p>
+          <a href="#services" class="link-arrow" data-i18n="cta.details">Детальніше →</a>
+        </article>
+        <article class="hl">
+          <div class="ph ph--wide"><img src="images/contract.jpg" alt="Робота над договором про надання правової допомоги" style="--pos:50% 38%" loading="lazy"></div>
+          <p class="eyebrow eyebrow--sm" data-i18n="hl.2.eyebrow">Бізнес</p>
+          <h3 class="hl__title" data-i18n="hl.2.title">Корпоративне право</h3>
+          <p class="muted" data-i18n="hl.2.text">Протоколи, зміна учасників і директора, видів діяльності, щоденна договірна робота підприємства.</p>
+          <a href="#services" class="link-arrow" data-i18n="cta.details">Детальніше →</a>
+        </article>
+        <article class="hl">
+          <div class="ph ph--wide"><img src="images/documents.jpg" alt="Перевірка документів" style="--pos:50% 55%" loading="lazy"></div>
+          <p class="eyebrow eyebrow--sm" data-i18n="hl.3.eyebrow">Держоргани</p>
+          <h3 class="hl__title" data-i18n="hl.3.title">Податкові спори</h3>
+          <p class="muted" data-i18n="hl.3.text">Оскарження рішень податкової інспекції, митної та екологічної служб.</p>
+          <a href="#services" class="link-arrow" data-i18n="cta.details">Детальніше →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT (personal letter + card) ============ -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__text">
+          <h2 class="h2" data-i18n="about.title">Понад 20 років<br><em>на захисті бізнесу</em></h2>
+          <span class="rule"></span>
+          <p class="muted" data-i18n="about.p1">Я — кваліфікований юрист і адвокат із понад 20-річною практикою. Свідоцтво про право на заняття адвокатською діяльністю — з 2012 року.</p>
+          <p class="muted" data-i18n="about.p2">Шлях у професії — від юриста державного підприємства «Завод 410 ЦА» до керівника юридично-договірного відділу та заступника директора з правових питань. Освіта: НПУ ім. М. П. Драгоманова (викладач права, юрист) та Інститут післядипломної освіти НАУ (економіст). Постійно підвищую кваліфікацію на семінарах і профільних заходах.</p>
+          <div class="about__footer">
+            <a href="#contact" class="btn btn--dark" data-i18n="cta.write">Написати мені</a>
+            <div class="signature">
+              <div class="signature__line"><span data-i18n="about.signature">В. Фастовець</span></div>
+              <p class="signature__name" data-i18n="logo">Вікторія Фастовець</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="profile">
+          <div class="ph ph--portrait"><img src="images/sofa.jpg" alt="Вікторія Фастовець за роботою" style="--pos:50% 45%" loading="lazy"></div>
+          <p class="profile__name" data-i18n="logo">Вікторія Фастовець</p>
+          <p class="profile__role" data-i18n="about.role">Юрист · Адвокат</p>
+          <span class="rule rule--center"></span>
+          <p class="profile__brand" data-i18n="about.brand">Київ</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES (4 features + image) ============ -->
+    <section class="section section--alt" id="services">
+      <div class="container services__grid">
+        <div>
+          <h2 class="h2" data-i18n="services.title">Напрями<br><em>практики</em></h2>
+          <p class="muted lead" data-i18n="services.lead">Повний юридичний супровід підприємств — від укладання договорів до представництва в судах усіх інстанцій.</p>
+
+          <div class="features">
+            <div class="feature">
+              <div class="icon-box">01</div>
+              <div><h4 class="feature__title" data-i18n="services.1">Судові спори</h4><p class="muted small" data-i18n="services.1d">Цивільні, господарські, адміністративні справи та спори щодо ДТП. Повна підготовка документів до суду.</p></div>
+            </div>
+            <div class="feature">
+              <div class="icon-box">02</div>
+              <div><h4 class="feature__title" data-i18n="services.2">Договірна робота</h4><p class="muted small" data-i18n="services.2d">Договори перевезення, поставки, підряду, оренди, реклами. Роз’яснення умов, наслідків і ризиків.</p></div>
+            </div>
+            <div class="feature">
+              <div class="icon-box">03</div>
+              <div><h4 class="feature__title" data-i18n="services.3">Податки та митниця</h4><p class="muted small" data-i18n="services.3d">Спори з податковою інспекцією, митною та екологічною службою, оскарження їхніх рішень.</p></div>
+            </div>
+            <div class="feature">
+              <div class="icon-box">04</div>
+              <div><h4 class="feature__title" data-i18n="services.4">Стягнення боргів</h4><p class="muted small" data-i18n="services.4d">Претензії, позови, апеляційні й касаційні скарги, представництво у виконавчій службі.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="services__visual">
+          <div class="ph ph--tall"><img src="images/desk.jpg" alt="Робоче місце адвоката" style="--pos:40% 40%" loading="lazy"></div>
+          <div class="quote-box">
+            <p data-i18n="services.quote">Відповідальність, наполегливість і обґрунтована позиція в кожному спірному питанні.</p>
+            <span class="quote-box__author" data-i18n="logo">Вікторія Фастовець</span>
+          </div>
+          <div class="mosaic" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="container exp__grid">
+        <div class="exp__text">
+          <h2 class="h2" data-i18n="exp.title">Досвід<br><em>і надійність</em></h2>
+          <p class="muted lead" data-i18n="exp.lead">Два десятиліття юридичного супроводу підприємств у сферах авіаремонту, пасажирських і вантажних перевезень, торгівлі паливом і запчастинами.</p>
+
+          <div class="stats">
+            <div class="stat"><p class="stat__num">20+</p><p class="card__label" data-i18n="exp.s1">Років практики</p></div>
+            <div class="stat"><p class="stat__num">5</p><p class="card__label" data-i18n="exp.s2">Галузей права</p></div>
+            <div class="stat"><p class="stat__num" data-i18n="exp.s3n">Усі</p><p class="card__label" data-i18n="exp.s3">Судові інстанції</p></div>
+          </div>
+
+          <ul class="timeline">
+            <li class="timeline__item"><span class="timeline__year">2012+</span><div><p class="timeline__role" data-i18n="exp.t0.role">Адвокат</p><p class="muted small" data-i18n="exp.t0.org">Адвокатська діяльність · дотепер</p></div></li>
+            <li class="timeline__item"><span class="timeline__year">2019 — 2022</span><div><p class="timeline__role" data-i18n="exp.t1.role">Юрисконсульт</p><p class="muted small" data-i18n="exp.t1.org">«Сервіс-Чемпіон» · вантажні перевезення, торгівля паливом і запчастинами</p></div></li>
+            <li class="timeline__item"><span class="timeline__year">2011 — 2018</span><div><p class="timeline__role" data-i18n="exp.t2.role">Заступник директора з правових питань</p><p class="muted small" data-i18n="exp.t2.org">ТОВ «Кийтранс-2005» · пасажирські перевезення</p></div></li>
+            <li class="timeline__item"><span class="timeline__year">2008 — 2011</span><div><p class="timeline__role" data-i18n="exp.t3.role">Начальник юридично-договірного відділу</p><p class="muted small" data-i18n="exp.t3.org">ДП «Завод 410 ЦА» · ремонт літаків</p></div></li>
+            <li class="timeline__item"><span class="timeline__year">2000 — 2008</span><div><p class="timeline__role" data-i18n="exp.t4.role">Юрист</p><p class="muted small" data-i18n="exp.t4.org">ДП «Завод 410 ЦА»</p></div></li>
+          </ul>
+
+          <div class="steps">
+            <div class="step"><div class="icon-box icon-box--lg">I</div><p class="step__title" data-i18n="exp.p1">Аналіз</p></div>
+            <div class="step"><div class="icon-box icon-box--lg">II</div><p class="step__title" data-i18n="exp.p2">Стратегія</p></div>
+            <div class="step"><div class="icon-box icon-box--lg">III</div><p class="step__title" data-i18n="exp.p3">Результат</p></div>
+          </div>
+        </div>
+        <div class="exp__visual">
+          <div class="ph ph--portrait"><img src="images/laptop.jpg" alt="Підготовка документів на ноутбуці" style="--pos:50% 55%" loading="lazy"></div>
+          <div class="mosaic mosaic--left" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--alt" id="contact">
+      <div class="container contact__grid">
+        <div>
+          <h2 class="h2" data-i18n="contact.title">Запишіться на<br><em>консультацію</em></h2>
+          <p class="muted lead" data-i18n="contact.lead">Усні та письмові консультації з питань чинного законодавства. Залиште заявку.</p>
+          <ul class="contact__list">
+            <li><span class="card__label" data-i18n="contact.phone">Телефон</span><a href="tel:+380672390162">+380 67 239 01 62</a></li>
+            <li><span class="card__label">Email</span><a href="mailto:victoria.fastovets@gmail.com">victoria.fastovets@gmail.com</a></li>
+          </ul>
+          <div class="ph ph--wide contact__photo"><img src="images/planner.jpg" alt="Планування консультацій" style="--pos:50% 45%" loading="lazy"></div>
+        </div>
+        <form class="form card" onsubmit="return false">
+          <label class="field"><span data-i18n="form.name">Ім'я</span><input type="text"></label>
+          <label class="field"><span data-i18n="form.phone">Телефон</span><input type="tel"></label>
+          <label class="field"><span data-i18n="form.msg">Повідомлення</span><textarea rows="4"></textarea></label>
+          <button class="btn btn--dark btn--block" data-i18n="form.send">Надіслати</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="logo logo--light">
+        <span class="logo__mark"></span>
+        <span class="logo__text" data-i18n="logo">Вікторія Фастовець</span>
+      </a>
+      <p class="footer__copy">© 2026 · <span data-i18n="footer.rights">Усі права захищено</span></p>
+      <div class="socials"><a href="#">in</a><a href="#">f</a><a href="#">ig</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

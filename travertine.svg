@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="none">
+  <!-- Italian travertine: horizontal veins + sparse pores + fine plaster grain -->
+  <filter id="veins" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.0015 0.035" numOctaves="5" seed="11"/>
+    <feColorMatrix values="0 0 0 0 0.55  0 0 0 0 0.43  0 0 0 0 0.30  1.9 0 0 0 -0.95"/>
+  </filter>
+  <filter id="pores" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.06 0.3" numOctaves="2" seed="4"/>
+    <feColorMatrix values="0 0 0 0 0.42  0 0 0 0 0.33  0 0 0 0 0.24  9 0 0 0 -6.1"/>
+  </filter>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="2"/>
+    <feColorMatrix values="0 0 0 0 0.35  0 0 0 0 0.28  0 0 0 0 0.20  0 0 0 0.09 0"/>
+  </filter>
+  <rect width="100%" height="100%" fill="#E4D6C1"/>
+  <rect width="100%" height="100%" filter="url(#veins)" opacity=".55"/>
+  <rect width="100%" height="100%" filter="url(#pores)" opacity=".35"/>
+  <rect width="100%" height="100%" filter="url(#grain)"/>
+</svg>
